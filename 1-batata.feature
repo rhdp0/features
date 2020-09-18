@@ -1,11 +1,10 @@
 # language: pt
 
-Funcionalidade: Abrir primeira imagem de batata
-  Pesquisar no google batata, ir em imagens e abrir a primeira
+Funcionalidade: Pesquisa
 
-Cenário: Iniciar pesquisa no google
-  Dado que o usuário esteja na página de pesquisa do google
-  Quando o usuário pesquisar por batatas
-  E ir em imagens
+Cenário: Pesquisar imagem
+  Dado que esteja na home
+  Quando Pesquisar por "batatas"
+  E acessar imagens
   E abrir a primeira imagem
-  Então o usuário verá a primeira imagem
+  Então deverão ser mostrados os dados da imagem
