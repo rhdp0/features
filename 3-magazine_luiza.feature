@@ -1,11 +1,11 @@
 # language:pt
 
-Funcionalidade: Adicionar produto no carrinho
-Abrir o site da magazine luiza, pesquisar por computador, e adicionar o primeiro produto ao carrinho
+Funcionalidade: Carrinho
 
-Cenário: Pesquisar por computador
-  Dado que o usuário está no site da magazine luiza
-  E pesquisa por computador
-  Quando adicionar o primeiro produtono carrinho
-  Então o usuário deverá ver o produto adicionado no carrinho
+Cenário: Adicionar produto no carrinho pela busca
+  Dado que esteja na home
+  Quando pesquisar por "computador"
+  E adicionar o primeiro produto no carrinho
+  Então deverá ser exibida a mensagem "Produto adicionado com sucesso"
+  E o produto deverá ser listado no carrinho
 
