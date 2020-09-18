@@ -1,20 +1,18 @@
 # language:pt
 
-Funcionalidade: Login no site da submarino
-Entrar no site da submarino, se tiver conta, se não tiver conta criar uma
+Funcionalidade: Autenticação
 
-Contexto:
-  Dado que o usuário está no site da submarino.com.br
+  Contexto:
+    Dado que esteja na home
 
-Cenário: O usuário tem uma conta
-  Dado que o usuário preenche o campo usuário
-  E preenche o campo senha
-  Quando o usuário fizer login
-  Então o usuário verá sua foto de perfil
-  E verá seu nome de usuário
+    Esquema do Cenário: Realizar Login
+      Quando realizar login com "<user>" e "<pass>"
+      Então deverá ser exibido o nome do usuário no header
 
-Cenário: o usuário não tem uma conta
-  Dado que o usuário abre a página de criação de conta
-  E preenche os campos com seus dados dados
-  Quando o usuário criar sua conta
-  Então poderá fazer login
+      Exemplos:
+        | user   | pass   |
+        | rafael | rafael |
+
+    Cenário: Realizar cadastro
+      Quando realizar cadastro
+      Então deverá ser exibido o nome do usuário no header
