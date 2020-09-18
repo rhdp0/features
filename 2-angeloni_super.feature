@@ -1,10 +1,9 @@
 # languege: pt
 
-Funcionalidade: Ver primeiro produto
-Abrir o site do mercado Angeloni Super, abrir o primeiro departamento e abrir a página do primeiro produto
+Funcionalidade: Produto
 
-Cenário: Abre página do primeiro produto
-  Dado que o usuário está no site do mercado Angeloni
-  E abre no primeiro departamento
-  E abre a página do primeiro produto
-  Então o usuário deve ver a página do produto
+Cenário: Abrir produto
+  Dado que esteja na home
+  Quando abrir primerio departamento
+  E abrir primeiro produto
+  Então deverão ser mostrados os dados do produto
